@@ -1,0 +1,40 @@
+[mod]
+id = "rainbow-spyro"
+name = "Rainbow Spyro (Animated RGB)"
+game = "spyro-1"
+version = "0.1.0"
+api = 3
+sim_mutative = false
+state = "none"
+runahead = "pure"
+
+# The settings below appear in M -> Mods when this mod is loaded.
+[[config]]
+key = "speed"
+type = "float"
+label = "Rainbow speed (cycles per second)"
+group = "Rainbow Spyro"
+help = "How quickly the colors flow. 0 stops the color cycle."
+default = 0.18
+min = 0.0
+max = 1.5
+
+[[config]]
+key = "band_density"
+type = "float"
+label = "Rainbow stripe density"
+group = "Rainbow Spyro"
+help = "Higher values show more rainbow bands over Spyro."
+default = 0.0035
+min = 0.0004
+max = 0.025
+
+[[config]]
+key = "strength"
+type = "float"
+label = "Rainbow strength"
+group = "Rainbow Spyro"
+help = "Blend from Spyro's original colors (0) to full rainbow (1)."
+default = 0.95
+min = 0.0
+max = 1.0
